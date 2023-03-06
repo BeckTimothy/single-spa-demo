@@ -12,7 +12,13 @@ import { registerApplication, start } from "single-spa";
 registerApplication({
   name: "@Demo/react",
   app: () => System.import("@Demo/react"),
-  activeWhen: ["/"]
+  activeWhen: ["/react"],
+});
+
+registerApplication({
+  name: "@Demo/vue",
+  app: () => System.import("@Demo/vue"),
+  activeWhen: ["/vue"],
 });
 
 start({

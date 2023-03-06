@@ -34,7 +34,9 @@
       "imports": {
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
         "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
-        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js"
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js",
+        "vue": "https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js",
+        "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@3.1.6/dist/vue-router.min.js"
       }
     }
   </script>
@@ -48,7 +50,8 @@
     {
       "imports": {
         "@Demo/root-config": "//localhost:9000/Demo-root-config.js",
-        "@Demo/react": "//localhost:8080/Demo-react.js"
+        "@Demo/react": "//localhost:8081/Demo-react.js",
+        "@Demo/vue": "//localhost:8082/js/app.js"
       }
     }
   </script>
@@ -73,6 +76,8 @@
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
+  <a href="http://localhost:9000/react">React</a></br>
+  <a href="http://localhost:9000/vue">Vue</a></br></br>
   <main></main>
   <script>
     System.import('@Demo/root-config');
