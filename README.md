@@ -1,6 +1,11 @@
-This project is a demo of single-spa.
 
-A javascript router for micro-frontends.
+
+# Single-SPA Demo
+
+---
+- [single-spa website and docs](https://single-spa.js.org/)
+---
+This project is a demo of single-spa, a javascript router for micro-frontends.
 
 It currently contains:
 1. A root-config; The base router and import map for different single page applications (SPAs)
